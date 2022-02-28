@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function(){
+          $("#central-img").on("mouseenter", function(){
+            console.log ("hola")
+              $("#central-img").css({"transform": "rotate(180deg)"})
+      
+          })
+          $("#central-img").on("mouseleave", function(){
+              $("#central-img").css({"transform": "rotate(0deg)"})
+              
+          })
+      })
+      </script>
+    <title>Document</title>
+  </head>
+  <body class="container">
+       <div class="container flex-horizontal">
+      <img src="img/triangulonuevo.svg"  class="img" alt="" />
+      <img src="img/triangulonuevo.svg"  class="img" id="rotate-180" alt="" />
+    </div>
+    <div class="container flex-full-center" id="black">
+      <img src="img/triangles_junts.svg" class="img" alt="" />
+    </div>
+    <div class="container flex-full-center">
+      <img id="central-img"src="img/collage.png" alt="" />
+    </div>
+    <div class="container flex-vertical">      
+      <h1>
+        <span> Ana Mora</span>
+        <br />
+        EASD ALCOI 21-22
+      </h1>
+      <h1>
+        Recursos <br />
+        <span> Interactius Aplicats </span>
+      </h1>
+    </div>
+  </body>
+</html>
